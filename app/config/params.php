@@ -1,5 +1,8 @@
 <?php
 //  params
+// init zone dynamique
+$title = '';
+$content = '';
 //  Parametre de connexion a la db
 define('DB_HOST', 'localhost:8889');
 define('DB_NAME', 'retro_monsters_2025');
