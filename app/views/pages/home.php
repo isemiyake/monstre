@@ -54,7 +54,7 @@
                  </div>
                  <div class="">
                      <a
-                         href="monster.html"
+                         href="?monstre=show&id=<?php echo $monster['id']; ?>"
                          class="inline-block text-white bg-red-500 hover:bg-red-700 rounded-full px-4 py-2 transition-colors duration-300">Plus de détails</a>
                  </div>
              </div>
@@ -68,4 +68,5 @@
          Derniers monstres ajoutés
      </h2>
      <?php include '../app/views/card/_index.php'; ?>
+
  </section>

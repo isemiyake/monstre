@@ -4,8 +4,6 @@
 
     <?php include_once '../app/views/templates/partials/_nav.php'; ?>
 
-    <!-- Menu pour mobile -->
-
     <?php include_once '../app/views/templates/partials/_menu.php'; ?>
 
 </header>

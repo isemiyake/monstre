@@ -11,7 +11,7 @@
              <div class="p-4">
                  <h3 class="text-xl font-bold"><?php echo $monster['nomm']; ?></h3>
                  <h4 class="mb-2">
-                     <a href="#" class="text-red-400 hover:underline"><?php echo $monster['user_id']; ?></a>
+                     <a href="?monstre=show&id=<?php echo $monster['id']; ?>" class="text-red-400 hover:underline"><?php echo $monster['user_id']; ?></a>
                  </h4>
                  <p class="text-gray-300 text-sm mb-2">
                      <?php echo $monster['description']; ?>
@@ -28,7 +28,7 @@
                  </div>
                  <div class="text-center">
                      <a
-                         href="monster.html"
+                         href="?monstre=show&id=<?php echo $monster['id']; ?>"
                          class="inline-block text-white bg-red-500 hover:bg-red-700 rounded-full px-4 py-2 transition-colors duration-300">Plus de détails</a>
                  </div>
              </div>

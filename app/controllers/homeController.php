@@ -8,8 +8,8 @@ function homeAction(PDO $connexion)
 {
     // charger la db
     include_once '../app/models/monstre.php';
-    include_once '../app/models/monstre3.php';
-    $monsters = \App\Models\Monstre3\findAll($connexion, 3);
+    include_once '../app/models/monstreAll.php';
+    $monsters = \App\Models\MonstreAll\findAll($connexion, 3);
     $monster = \App\Models\Monstre\findone($connexion);
     // charger home
     global $content, $title;
