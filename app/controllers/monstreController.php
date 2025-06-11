@@ -7,13 +7,13 @@ use \PDO;
 function monstreAction(PDO $connexion)
 {
     // charger la db
-    include_once '../app/models/Monstre.php';
-    $allMonsters = \App\Models\Monstre\findall($connexion);
+    include_once '../app/models/monstreAll.php';
+    $allMonsters = \App\Models\MonstreAll\findAll($connexion);
 
     // charger home
     global $content, $title;
     $title = 'all monster';
     ob_start();
-    include '../app/views/pages/home.php';
+    include '../app/views/pages/allMonstre.php';
     $content = ob_get_clean();
 }
