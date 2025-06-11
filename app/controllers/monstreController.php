@@ -8,7 +8,7 @@ function monstreAction(PDO $connexion)
 {
     // charger la db
     include_once '../app/models/monstre3.php';
-    $monsters = \App\Models\Monstre3\find3($connexion);
+    $monsters = \App\Models\Monstre3\findAll($connexion);
     // charger home
     global $content, $title;
     $title = 'all monster';
